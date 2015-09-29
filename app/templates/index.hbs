@@ -3,11 +3,8 @@
 </center>
 <div class="home-container">
   <h3>Categories:</h3>
-  <ul>
-    {{#each model as |category|}}
-      <li>{{#linkTo 'category' category.id}}{{category.name}}{{/linkTo}}</li>
-    {{/each}}
-  </ul>
+  
+  {{category-tile categories=model}}
 
   {{new-category save2='save3'}}
 </div>

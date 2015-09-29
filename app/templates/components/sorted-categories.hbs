@@ -1,0 +1,5 @@
+<ul>
+  {{#each sortedCategories as |category|}}
+    <li>{{#linkTo 'category' category.id}}{{category.name}}{{/linkTo}}</li>
+  {{/each}}
+</ul>
